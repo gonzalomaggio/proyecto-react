@@ -1,0 +1,19 @@
+.cartwidget {
+  display: flex;
+  flex-direction: column;
+  color: white;
+
+  .cart {
+    font-size: 1.5rem;
+    transform: translateY(-4px);
+  }
+
+  p {
+    margin: 0;
+    text-align: center;
+    height: auto;
+    color: #EC69A6;
+    transform: translate(1px, 4px);
+
+  }
+}

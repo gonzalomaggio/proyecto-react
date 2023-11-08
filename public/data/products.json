@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "Motorola E22",
+    "description": "Memoria interna 64gb - Memoria Ram 4gb - Cámara principal 16MP - Pantalla 6.5 HD+ - Android 12 - 4G LTE",
+    "img": "/img/motorolae22.webp",
+    "price": 86999,
+    "descount": 10,
+    "category": "Motorola",
+    "stock": "10"
+  },
+  {
+    "id": 2,
+    "name": "Celular ZTE Blade V40",
+    "description": "Memoria interna 64gb - Memoria Ram 2gb - Cámara principal 13MP - Pantalla 6.5 HD+ - Android 12 - 4G LTE",
+    "img": "/img/ztebladev40.webp",
+    "price": 58999,
+    "descount": 0,
+    "category": "ZTE",
+    "stock": "15"
+  },
+  {
+    "id": 3,
+    "name": "Xiaomi Redmi Note 12",
+    "description": "Memoria interna 128gb - Memoria Ram 4gb - Cámara principal 50MB - Pantalla 6.4 FHD+ - Android 11 - 4G LTE",
+    "img": "/img/xiaomiredmi12c.webp",
+    "price": 144999,
+    "descount": 0,
+    "category": "Xiaomi",
+    "stock": "20"
+  },
+  {
+    "id": 4,
+    "name": "Celular TCL 408",
+    "description": "Memoria interna 64gb - Memoria Ram 4gb - Cámara principal 16MP - Pantalla 6.4 FHD+ - Android 12 - 4G LTE",
+    "img": "/img/tcl408.webp",
+    "price": 105999,
+    "descount": 15,
+    "category": "TCL",
+    "stock": "10"
+  },
+  {
+    "id": 5,
+    "name": "Motorola EDGE 40",
+    "description": "Memoria interna 256gb - Memoria Ram 12gb - Cámara principal 50MP - Pantalla 6.6 FHD+ - Android 13 - 5G LTE",
+    "img": "/img/motorolaedge.webp",
+    "price": 499999,
+    "descount": 0,
+    "category": "Motorola",
+    "stock": "20"
+  },
+  {
+    "id": 6,
+    "name": "Samsung Galaxy Z",
+    "description": "Memoria interna 512gb - Memoria Ram 8gb - Cámara principal 12MP - Pantalla 6.7 FHD+ - Android 12 - 4G LTE",
+    "img": "/img/samsungalaxyz.webp",
+    "price": 539999,
+    "descount": 15,
+    "category": "Samsung",
+    "stock": "8"
+  },
+  {
+    "id": 7,
+    "name": "Celular ZTE Blade A33",
+    "description": "Memoria interna 68gb - Memoria Ram 2gb - Cámara principal 5MP - Pantalla 6.4 FHD+ - Android 11 - 4G LTE",
+    "img": "/img/ztebladea33.webp",
+    "price": 51999,
+    "descount": 20,
+    "category": "ZTE",
+    "stock": "20"
+  },
+  {
+    "id": 8,
+    "name": "Celular TCL 405",
+    "description": "Memoria interna 64gb - Memoria Ram 2gb - Cámara principal 13MP - Pantalla 6.6 FHD+ - Android 12 - 4G LTE",
+    "img": "/img/tcl405.webp",
+    "price": 52999,
+    "descount": 19,
+    "category": "TCL",
+    "stock": "16"
+  },
+  {
+    "id": 9,
+    "name": "Motorola G13",
+    "description": "Memoria interna 128gb - Memoria Ram 4gb - Cámara principal 50MP - Pantalla 6.5 HD+ - Android 13 - 4G LTE",
+    "img": "/img/motorolag13.webp",
+    "price": 109999,
+    "descount": 15,
+    "category": "Motorola",
+    "stock": "7"
+  },
+  {
+    "id": 10,
+    "name": "Motorola G23",
+    "description": "Memoria interna 128gb - Memoria Ram 4gb - Cámara principal 16MP - Pantalla 6.5 HD+ - Android- 4G LTE",
+    "img": "/img/motorolag23.webp",
+    "price": 129999,
+    "descount": 15,
+    "category": "Motorola",
+    "stock": "9"
+  },
+  {
+    "id": 11,
+    "name": "Samsung Galaxy AO4",
+    "description": "Memoria interna 128gb - Memoria Ram 4gb - Cámara principal 50MP - Pantalla 6.5 LCD+ - Android 11 - 4G LTE",
+    "img": "/img/samsunggalaxyao04.webp",
+    "price": 99999,
+    "descount": 0,
+    "category": "Samsung",
+    "stock": "20"
+  },
+  {
+    "id": 12,
+    "name": "Samsung Galaxy A34",
+    "description": "Memoria interna 128gb - Memoria Ram 5gb - Cámara principal 48MP - Pantalla 6.6 FHD+ - Android - 4G LTE",
+    "img": "/img/samsunggalaxya34.webp",
+    "price": 199999,
+    "descount": 12,
+    "category": "Samsung",
+    "stock": "15"
+  }
+]

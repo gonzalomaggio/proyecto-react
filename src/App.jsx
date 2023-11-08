@@ -1,15 +1,28 @@
-import { useState } from "react";
-import "./App.css";
+import { useState, useEffect } from "react";
+
+import "./App.scss";
 import Navbar from "./components/Navbar/Navbar";
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
+import ItemDetailContainer from "./components/ItemdetailContainer/ItemDetailContainer";
+import Slider from "./components/Slider/Slider";
+import Delivery from "./components/Delivery/Delivery";
+import Error from "./components/Error/Error";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
-  const greeting = "Un mundo para tu bebé";
-
   return (
     <>
-      <Navbar />
-      <ItemListContainer mensaje={greeting} />
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<ItemListContainer />} />
+          <Route path="/category/:categoryId" element={<ItemListContainer />} />
+          <Route path="/offer/:offerId" element={<ItemListContainer />} />
+          <Route path="/item/:idProduct" element={<ItemDetailContainer />} />
+          <Route path="/envios" element={<Delivery />} />
+          <Route path="*" element={<Error />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }

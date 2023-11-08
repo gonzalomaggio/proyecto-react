@@ -4,35 +4,56 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import CartWidget from "../CartWidget/CartWidget";
-import "./navbar.css";
-import logo from "../../assets/img/logo.png";
+import logo from "/img/logo.png";
+import Slider from "../Slider/Slider";
+import { Link } from "react-router-dom";
+import "./navbar.scss";
 
-const NavBar = () => {
+const NavBar = ({ descount }) => {
   return (
-    <Navbar expand="lg" className="barra">
-      <Container>
-        <Navbar.Brand href="#home">
-          <img src={logo} alt="" className="logo" />
-        </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link href="#home">Inicio</Nav.Link>
-            <Nav.Link href="#link">Envíos</Nav.Link>
-            <NavDropdown title="Productos" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Pañales</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">Higiene</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">
-                Alimentación
-              </NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">Ofertas</NavDropdown.Item>
-            </NavDropdown>
-          </Nav>
-        </Navbar.Collapse>
-        <CartWidget />
-      </Container>
-    </Navbar>
+    <>
+      <Navbar expand="lg" className="barra">
+        <Container>
+          <Navbar.Brand as={Link} to="/">
+            {<img src={logo} alt="" className="logo" />}
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="me-auto">
+              <Nav.Link as={Link} to="/">
+                Inicio
+              </Nav.Link>
+              <Nav.Link as={Link} to="/envios">
+                Envíos
+              </Nav.Link>
+              <NavDropdown title="Smartphones" id="basic-nav-dropdown">
+                <NavDropdown.Item as={Link} to="/category/Motorola">
+                  Motorola
+                </NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/category/Samsung">
+                  Samsung
+                </NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/category/TCL">
+                  TCL
+                </NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/category/Xiaomi">
+                  Xiaomi
+                </NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/category/ZTE">
+                  ZTE
+                </NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item as={Link} to={`/offer/${descount}`}>
+                  Ofertas
+                </NavDropdown.Item>
+              </NavDropdown>
+            </Nav>
+          </Navbar.Collapse>
+          <CartWidget />
+        </Container>
+      </Navbar>
+      <Slider />
+    </>
   );
 };
 

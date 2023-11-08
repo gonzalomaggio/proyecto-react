@@ -1,0 +1,43 @@
+.barra {
+  background-color: #323053;
+  ;
+}
+
+.navbar-nav {
+
+  a {
+    color: white;
+
+
+    &:hover {
+      color: #EC69A6;
+    }
+  }
+
+  .nav-link.active {
+    color: #EC69A6 !important
+  }
+
+  .nav-link.show {
+    color: #EC69A6 !important
+  }
+
+  .nav-link:focus {
+    color: white
+  }
+}
+
+.navbar-collapse {
+  justify-content: center;
+  align-items: center;
+  flex-grow: 0 !important;
+}
+
+.dropdown-item {
+  color: #202334 !important
+}
+
+
+.logo {
+  width: 200px;
+}

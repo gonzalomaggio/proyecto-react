@@ -1,13 +1,12 @@
-import React from 'react';
+import React from "react";
 import { BiCart } from "react-icons/bi";
-import "./cartwidget.css"
+import "./cartwidget.scss";
 
 const CartWidget = () => {
   return (
-    <div className='cart'>
-      <BiCart/>
+    <div className="cartwidget">
       <p>0</p>
-      
+      <BiCart className="cart" />
     </div>
   );
 };
