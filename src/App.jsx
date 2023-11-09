@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 
 import "./App.scss";
 import Navbar from "./components/Navbar/Navbar";
+import ItemListDescounContainer from "./components/ItemListdescountContainer/ItemListDescountContainer";
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
 import ItemDetailContainer from "./components/ItemdetailContainer/ItemDetailContainer";
 import Slider from "./components/Slider/Slider";
@@ -17,7 +18,7 @@ function App() {
         <Routes>
           <Route path="/" element={<ItemListContainer />} />
           <Route path="/category/:categoryId" element={<ItemListContainer />} />
-          <Route path="/offer/:offerId" element={<ItemListContainer />} />
+
           <Route path="/item/:idProduct" element={<ItemDetailContainer />} />
           <Route path="/envios" element={<Delivery />} />
           <Route path="*" element={<Error />} />

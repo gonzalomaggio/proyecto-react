@@ -9,7 +9,7 @@ import Slider from "../Slider/Slider";
 import { Link } from "react-router-dom";
 import "./navbar.scss";
 
-const NavBar = ({ descount }) => {
+const NavBar = () => {
   return (
     <>
       <Navbar expand="lg" className="barra">
@@ -43,7 +43,7 @@ const NavBar = ({ descount }) => {
                   ZTE
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item as={Link} to={`/offer/${descount}`}>
+                <NavDropdown.Item as={Link} to="/">
                   Ofertas
                 </NavDropdown.Item>
               </NavDropdown>

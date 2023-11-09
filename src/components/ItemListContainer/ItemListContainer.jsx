@@ -9,7 +9,6 @@ import "./itemListContainer.scss";
 const ItemListContainer = () => {
   const [products, setProducts] = useState([]);
   const { categoryId } = useParams();
-  const { offerId } = useParams;
 
   useEffect(() => {
     const fetchData = () => {
@@ -21,12 +20,6 @@ const ItemListContainer = () => {
               (p) => p.category === categoryId
             );
             setProducts(filterProducts);
-          } else if (offerId) {
-            const offerProducts = data.filter(
-              (p) => p.descount > 0 && p.descount === parseInt(offerId)
-            );
-
-            setProducts(offerProducts);
           } else {
             setProducts(data);
           }
@@ -34,7 +27,7 @@ const ItemListContainer = () => {
         .catch((error) => console.log(error));
     };
     fetchData();
-  }, [categoryId, offerId]);
+  }, [categoryId]);
 
   return (
     <>
