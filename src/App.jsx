@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 import "./App.scss";
 import Navbar from "./components/Navbar/Navbar";
-import ItemListDescounContainer from "./components/ItemListdescountContainer/ItemListDescountContainer";
+
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
 import ItemDetailContainer from "./components/ItemdetailContainer/ItemDetailContainer";
 import Slider from "./components/Slider/Slider";
