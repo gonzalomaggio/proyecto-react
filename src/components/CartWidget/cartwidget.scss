@@ -2,10 +2,13 @@
   display: flex;
   flex-direction: column;
   color: white;
+  align-items: center;
+  justify-content: center;
 
   .cart {
     font-size: 1.5rem;
-    transform: translateY(-4px);
+    margin-bottom: 0;
+    color: white;
   }
 
   p {
@@ -13,7 +16,7 @@
     text-align: center;
     height: auto;
     color: #EC69A6;
-    transform: translate(1px, 4px);
+    transform: translate(1px, 7px);
 
   }
 }

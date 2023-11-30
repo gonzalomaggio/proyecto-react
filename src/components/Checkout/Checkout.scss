@@ -1,0 +1,42 @@
+.mensaje-final {
+  width: 100%;
+  background-color: white;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 8px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+
+  &-cart {
+    font-size: 5rem;
+    color: #EC69A6;
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
+}
+
+.form__container {
+  display: flex;
+  width: 100%;
+  gap: 1rem;
+
+  &-form {
+    width: 70%;
+    background-color: white;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+
+  }
+
+  &-title {
+    margin-bottom: 1rem;
+  }
+}

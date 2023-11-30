@@ -4,23 +4,29 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import CartWidget from "../CartWidget/CartWidget";
-import logo from "/img/logo.png";
+
 import Slider from "../Slider/Slider";
 import { Link } from "react-router-dom";
 import "./navbar.scss";
 
-const NavBar = () => {
+const NavBar = ({ product, setCurrentPage }) => {
   return (
     <>
       <Navbar expand="lg" className="barra">
         <Container>
-          <Navbar.Brand as={Link} to="/">
-            {<img src={logo} alt="" className="logo" />}
+          <Navbar.Brand as={Link} to="/" onClick={() => setCurrentPage(1)}>
+            {
+              <img
+                src="https://i.ibb.co/VTZMMg2/logo.png"
+                alt=""
+                className="logo"
+              />
+            }
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link as={Link} to="/">
+              <Nav.Link as={Link} to="/" onClick={() => setCurrentPage(1)}>
                 Inicio
               </Nav.Link>
               <Nav.Link as={Link} to="/envios">
@@ -43,7 +49,7 @@ const NavBar = () => {
                   ZTE
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item as={Link} to="/">
+                <NavDropdown.Item as={Link} to="/category/Ofertas">
                   Ofertas
                 </NavDropdown.Item>
               </NavDropdown>
